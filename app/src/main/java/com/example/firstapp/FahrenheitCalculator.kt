@@ -22,7 +22,7 @@ class FahrenheitCalculator : AppCompatActivity() {
 
     fun handleClick(input: String, view: TextView){
         var parsedTemperature = toFahrenheit(input.toDouble())
-        view.text =  "%.2f Fº".format(parsedTemperature)
+        view.text =  "%.1f Fº".format(parsedTemperature)
     }
 
     fun toFahrenheit(temperature: Double) : Double{

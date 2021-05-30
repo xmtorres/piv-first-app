@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="main_title">What do you want to do?</string>
+    <string name="palindromes">Palindromes</string>
+    <string name="fahrenheit">Farenheit Calculator</string>
+    <string name="palindromes_title">Find your palindrome!</string>
+    <string name="palindromes_button">Check it!</string>
+    <string name="palindromes_textview">Here will be the result!</string>
+    <string name="fahrenheit_title">Convert Cº to Fº!</string>
+    <string name="fahrenheit_button">Convert</string>
+</resources>

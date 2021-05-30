@@ -13,17 +13,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         fun toPalindromesActivity(){
-            Toast.makeText(this@MainActivity, "Redirecting to Palindromes...", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, Palindromes::class.java)
             startActivity(intent)
         }
 
         fun toFarenheitCalculatorActivity(){
-            Toast.makeText(
-                this@MainActivity,
-                "Redirecting to Farenheit Calculator...",
-                Toast.LENGTH_SHORT
-            ).show()
             val intent = Intent(this, FahrenheitCalculator::class.java)
             startActivity(intent)
         }

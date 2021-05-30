@@ -11,12 +11,16 @@ class FahrenheitCalculator : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_farenheit_calculator)
 
-        val toFahrenheitButton = findViewById<Button>(R.id.convertButton)
         var temperatureInput = findViewById<EditText>(R.id.temperatureInput)
+        val toFahrenheitButton = findViewById<Button>(R.id.convertButton)
         var resultView = findViewById<TextView>(R.id.resultView)
 
+
         toFahrenheitButton.setOnClickListener{
-            handleClick(temperatureInput.text.toString(), resultView)
+            var input = temperatureInput.text.toString()
+            if(input != ""){
+                handleClick(input, resultView)
+            }
         }
     }
 

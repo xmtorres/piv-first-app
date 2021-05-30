@@ -21,13 +21,16 @@ class Palindromes : AppCompatActivity() {
         var resultView = findViewById<TextView>(R.id.palindromeResult)
 
         checkButton.setOnClickListener{
-            verifyInput(inputText,resultView)
+            var input = inputText.text.toString()
+            if(input != "") {
+                verifyInput(input,resultView)
+            }
         }
 
     }
 
-    fun verifyInput(input: EditText, view: TextView){
-        if(isPalindrome(input.text.toString())){
+    fun verifyInput(input: String, view: TextView){
+        if(isPalindrome(input)){
             view.text = PALINDROME
             view.setTextColor(getResources().getColor(R.color.red_200))
         } else {
